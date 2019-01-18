@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:orientation="vertical"
+    android:weightSum="100">
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="30">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                >
+
+                <ImageView
+                    android:id="@+id/collection_image_cardview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="16dp"
+                    />
+
+                <TextView
+                    android:id="@+id/collection_title_cardview_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/collection_image_cardview"
+                    android:layout_alignParentTop="true"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/collection_body_html_cardview_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/collection_image_cardview"
+                    android:layout_below="@+id/collection_title_cardview_text"
+                    />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <ListView
+            android:id="@+id/product_listView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="70">
+        </ListView>
+
+</LinearLayout>
